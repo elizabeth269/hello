@@ -54,7 +54,8 @@ use std::io;
 
 //
 fn main() {
-    let months: [&str; 12] = [
+    let months: [&str; 13] = [
+        "o",
         "January",
         "February",
         "March",
@@ -73,6 +74,7 @@ fn main() {
     io::stdin().read_line(&mut month).expect("Not a month");
 
     let month: usize = month.trim().parse().expect("you didn't enter a number");
+    // let month = month + 1;
     let element = months[month];
     println!("The month with number {month} is {element} ");
 }
