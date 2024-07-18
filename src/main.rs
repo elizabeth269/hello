@@ -39,7 +39,13 @@
 // println!("blue: {blue}");
 
 //tuples
+// fn main() {
+//     let tup: (i32, f64, u32) = (500, 56.4, 32);
+//     println!("first: {}, second: {}, third: {}", tup.0, tup.1, tup.2);
+// }
+
 fn main() {
-    let tup: (i32, f64, u32) = (500, 56.4, 32);
-    println!("first: {}, second: {}, third: {}", tup.0, tup.1, tup.2);
+    let tup = (2, 3, 4.5);
+    let (x, y, z) = tup;
+    println!("x: {x}, y: {y}, z:{z} ")
 }
