@@ -1,3 +1,11 @@
 The first part of the guessing game program will ask for user input, process that input, and check that the input is in the expected form. 
 Generating a Secret Number
 Comparing the Guess to the Secret Number
+
+
+Convert temperatures between Fahrenheit and Celsius.
+Generate the nth Fibonacci number.
+Print the lyrics to the Christmas carol “The Twelve Days of Christmas,” taking advantage of the repetition in the song.
+
+
+only people between 18 and 25 can participate in the game
