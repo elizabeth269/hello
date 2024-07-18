@@ -1,2 +1,3 @@
 The first part of the guessing game program will ask for user input, process that input, and check that the input is in the expected form. 
 Generating a Secret Number
+Comparing the Guess to the Secret Number
