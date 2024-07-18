@@ -69,6 +69,7 @@ fn main() {
         "December",
     ];
     let mut month = String::new();
+    println!("Enter a number from one to 12 to show you the month it represents");
     io::stdin().read_line(&mut month).expect("Not a month");
 
     let month: usize = month.trim().parse().expect("you didn't enter a number");
