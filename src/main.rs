@@ -44,8 +44,34 @@
 //     println!("first: {}, second: {}, third: {}", tup.0, tup.1, tup.2);
 // }
 
+// fn main() {
+//     let tup = (2, 3, 4.5);
+//     let (x, y, z) = tup;
+//     println!("x: {x}, y: {y}, z:{z} ")
+// }
+
+use std::io;
+
+//
 fn main() {
-    let tup = (2, 3, 4.5);
-    let (x, y, z) = tup;
-    println!("x: {x}, y: {y}, z:{z} ")
+    let months: [&str; 12] = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
+    let mut month = String::new();
+    io::stdin().read_line(&mut month).expect("Not a month");
+
+    let month: usize = month.trim().parse().expect("you didn't enter a number");
+    let element = months[month];
+    println!("The month with number {month} is {element} ");
 }
