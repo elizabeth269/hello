@@ -84,10 +84,19 @@
 
 //struct
 //calculate the area of a rectangle
-
+struct Rectangle {
+    height: u32,
+    width: u32,
+}
 fn main() {
-    struct rectangle {
-        height: u32,
-        width: u32,
-    }
+    let rect1 = Rectangle {
+        height: 2,
+        width: 6,
+    };
+
+    println!("The area of the rectangle is:{} ", area(&rect1));
+}
+
+fn area(rectangle: &Rectangle) -> u32 {
+    rectangle.height * rectangle.width
 }
