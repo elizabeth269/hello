@@ -81,3 +81,13 @@
 //     let element = months[month];
 //     println!("The month with number {month} is {element} ");
 // }
+
+//struct
+//calculate the area of a rectangle
+
+fn main() {
+    struct rectangle {
+        height: u32,
+        width: u32,
+    }
+}
