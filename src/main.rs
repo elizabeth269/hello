@@ -99,5 +99,5 @@ fn main() {
         width: 6,
     };
 
-    println!("The area of the rectangle is:{} ", area(&rect1));
+    println!("The area of the rectangle is:{} ", rect1.area());
 }
