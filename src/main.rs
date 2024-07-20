@@ -123,9 +123,14 @@ fn main() {
     // }
 
     //iterating over the values in a vector
-    let mut v = vec![1, 2, 3, 4, 5];
-    for i in &mut v {
-        *i += 10;
-        println!("{i}")
-    }
+    // let mut v = vec![1, 2, 3, 4, 5];
+    // for i in &mut v {
+    //     *i += 10;
+    //     println!("{i}")
+    // }
+
+    //strings
+    let hello = String::from("123");
+    println!("{hello}");
+    //updating a string
 }
