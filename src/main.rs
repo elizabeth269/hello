@@ -117,5 +117,8 @@ fn main() {
 
     //refernce the third value via get
     let third: Option<&i32> = v.get(2);
-    println!("the third value via the get method is {third}")
+    match third {
+        Some(third) => println!("the third value via the get method is {third}"),
+        None => println!("no third element"),
+    }
 }
