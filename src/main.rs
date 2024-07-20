@@ -84,20 +84,27 @@
 
 //struct
 //calculate the area of a rectangle
-struct Rectangle {
-    height: u32,
-    width: u32,
-}
-impl Rectangle {
-    fn area(&self) -> u32 {
-        self.height * self.width
-    }
-}
-fn main() {
-    let rect1 = Rectangle {
-        height: 2,
-        width: 6,
-    };
+// struct Rectangle {
+//     height: u32,
+//     width: u32,
+// }
+// impl Rectangle {
+//     fn area(&self) -> u32 {
+//         self.height * self.width
+//     }
+// }
+// fn main() {
+//     let rect1 = Rectangle {
+//         height: 2,
+//         width: 6,
+//     };
 
-    println!("The area of the rectangle is:{} ", rect1.area());
+//     println!("The area of the rectangle is:{} ", rect1.area());
+// }
+
+// vectors
+fn main() {
+    // let v: Vec<i32> = Vec::new();
+    let v = vec![1, 2, 3, 4, 5];
+    println!("This is v:, {v}");
 }
