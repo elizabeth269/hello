@@ -121,4 +121,10 @@ fn main() {
     //     Some(third) => println!("the third value via the get method is {third}"),
     //     None => println!("no third element"),
     // }
+
+    //iterating over the values in a vector
+    let v = vec![1, 2, 3, 4, 5];
+    for i in &v {
+        println!("{i}")
+    }
 }
