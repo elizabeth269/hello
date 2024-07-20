@@ -105,20 +105,20 @@
 // vectors
 fn main() {
     // let mut v: Vec<i32> = Vec::new();
-    //updating a vector
+    // // updating a vector
     // v.push(5);
     // v.push(6);
     // v.push(12);
-    // println!("This is v:, {v}");
-    let v = vec![1, 2, 3, 4, 5];
-    //refrence the third value via indexing
-    let third: &i32 = &v[2];
-    println!("the third value: {third}");
+    // println!("This is v:, {}", v);
+    // let v = vec![1, 2, 3, 4, 5];
+    // //refrence the third value via indexing
+    // let third: &i32 = &v[2];
+    // println!("the third value: {third}");
 
-    //refernce the third value via get
-    let third: Option<&i32> = v.get(2);
-    match third {
-        Some(third) => println!("the third value via the get method is {third}"),
-        None => println!("no third element"),
-    }
+    // //refernce the third value via get
+    // let third: Option<&i32> = v.get(2);
+    // match third {
+    //     Some(third) => println!("the third value via the get method is {third}"),
+    //     None => println!("no third element"),
+    // }
 }
