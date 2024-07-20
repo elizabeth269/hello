@@ -104,7 +104,11 @@
 
 // vectors
 fn main() {
-    // let v: Vec<i32> = Vec::new();
-    let v = vec![1, 2, 3, 4, 5];
-    println!("This is v:, {v}");
+    let mut v: Vec<i32> = Vec::new();
+    // let v = vec![1, 2, 3, 4, 5];
+    //updating a vector
+    v.push(5);
+    v.push(6);
+    v.push(12);
+    // println!("This is v:, {v}");
 }
