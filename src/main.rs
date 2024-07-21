@@ -164,21 +164,32 @@ fn main() {
     // let v = vec![1, 2, 3];
 
     // v[99];
-    use std::fs::File;
-    use std::io::ErrorKind;
+    // use std::fs::File;
+    // use std::io::ErrorKind;
 
-    let greeting_file_result = File::open("hello.txt");
+    // let greeting_file_result = File::open("hello.txt");
 
-    let greeting_file = match greeting_file_result {
-        Ok(file) => file,
-        Err(error) => match error.kind() {
-            ErrorKind::NotFound => match File::create("hello.txt") {
-                Ok(fc) => fc,
-                Err(e) => panic!("Problem creating the file: {e:?}"),
-            },
-            other_error => {
-                panic!("Problem opening the file: {other_error:?}");
+    // let greeting_file = match greeting_file_result {
+    //     Ok(file) => file,
+    //     Err(error) => match error.kind() {
+    //         ErrorKind::NotFound => match File::create("hello.txt") {
+    //             Ok(fc) => fc,
+    //             Err(e) => panic!("Problem creating the file: {e:?}"),
+    //         },
+    //         other_error => {
+    //             panic!("Problem opening the file: {other_error:?}");
+    //         }
+    //     },
+    // };
+    //create a vec that prints out the lagest number
+
+    let v = vec![2,3,4,6,7];
+    let largest = &v[0];
+    for i in v {
+        if i > largest {
+            println!{
+                
             }
-        },
-    };
+        }
+    }
 }
