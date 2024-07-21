@@ -183,12 +183,12 @@ fn main() {
     // };
     //create a vec that prints out the lagest number
 
-    let v = vec![2,3,4,6,7];
+    let v = vec![2, 3, 4, 6, 7];
     let largest = &v[0];
-    for i in v {
+    for i in &v {
         if i > largest {
-            println!{
-                
+            println! { "the largest number in v is {i}"
+
             }
         }
     }
