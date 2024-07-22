@@ -227,11 +227,27 @@ fn main() {
     //     largest
     // println!("the largest number is {largest}");
     //generis in struct
-    let interger = Name { x: 5, y: 7 };
-    let char = Name {x: 'x', y: 'y'}
-    
+    //     let interger = Name { x: 5, y: 7 };
+    //     let char = Name {x: 'x', y: 'y'};
+
+    //     let word = Name {x: 5, y:7.8}//wont work
+
+    //     struct Nameee<T, U>{
+    //         x:T,
+    //         y:U
+    //     }
+
+    // }
+    // struct Name<T> {
+    //     x: T,
+    //     y: T,
+    //monomorphization
+    #[Derive(Debug)]
+    let interger = Option::Some(5);
+    let float = Option::Some(5.6);
+    println!("{interger},{float}")
 }
-struct Name<T> {
-    x: T,
-    y: T,
+enum Option<T> {
+    Some(T),
+    None,
 }
