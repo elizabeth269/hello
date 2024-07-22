@@ -213,17 +213,25 @@ fn main() {
     // println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
 
     // // }
-    let number_list = vec![2, 3, 4, 5, 6, 7];
-    let result = largest(&number_list);
-    println!("the largest number is {result}");
-}
-fn largest<T>(lists: &[T]) -> &T {
-    let mut largest = &lists[0];
-    for i in lists {
-        if i > largest {
-            largest = i;
-        }
-    }
-    largest
+    //     let number_list = vec![2, 3, 4, 5, 6, 7];
+    //     let result = largest(&number_list);
+    //     println!("the largest number is {result}");
+    // }
+    // fn largest<T>(lists: &[T]) -> &T {
+    //     let mut largest = &lists[0];
+    //     for i in lists {
+    //         if i > largest {
+    //             largest = i;
+    //         }
+    //     }
+    //     largest
     // println!("the largest number is {largest}");
+    //generis in struct
+    let interger = Name { x: 5, y: 7 };
+    let char = Name {x: 'x', y: 'y'}
+    
+}
+struct Name<T> {
+    x: T,
+    y: T,
 }
