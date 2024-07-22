@@ -217,7 +217,7 @@ fn main() {
     let result = largest(&number_list);
     println!("the largest number is {result}");
 }
-fn largest(lists: &[i32]) -> &i32 {
+fn largest<T>(lists: &[T]) -> &T {
     let mut largest = &lists[0];
     for i in lists {
         if i > largest {
