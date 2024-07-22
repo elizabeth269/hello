@@ -213,5 +213,17 @@ fn main() {
     // println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
 
     // // }
+    let number_list = vec![2, 3, 4, 5, 6, 7];
+    let result = largest(&number_list);
+    println!("the largest number is {result}");
 }
-fn handle_lists() {}
+fn largest(lists: &[i32]) -> &i32 {
+    let mut largest = &lists[0];
+    for i in lists {
+        if i > largest {
+            largest = i;
+        }
+    }
+    largest
+    // println!("the largest number is {largest}");
+}
