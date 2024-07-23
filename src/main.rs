@@ -242,12 +242,13 @@ fn main() {
     //     x: T,
     //     y: T,
     //monomorphization
-    #[Derive(Debug)]
-    let interger = Option::Some(5);
-    let float = Option::Some(5.6);
-    println!("{interger},{float}")
-}
-enum Option<T> {
-    Some(T),
-    None,
+    //     #[Derive(Debug)]
+    //     let interger = Option::Some(5);
+    //     let float = Option::Some(5.6);
+    //     println!("{interger},{float}")
+    // }
+    // enum Option<T> {
+    //     Some(T),
+    //     None,
+    // }
 }
