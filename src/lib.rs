@@ -9,18 +9,30 @@
 //         self.width > other.width && self.height > other.height
 //     }
 // }
-pub fn add_two(left: usize, right: usize) -> usize {
-    left + right
+// pub fn add_two(left: usize, right: usize) -> usize {
+//     left + right
+// }
+// #[cfg(test)]
+// mod tests {
+//     use super::*;
+//     #[test]
+//     fn it_adds_two() {
+//         let result = add_two(2, 4);
+//         assert_eq!(result, 6);
+//     }
+// }
+pub fn add_three(a: i32) -> i32 {
+    a + 5
 }
 #[cfg(test)]
 mod tests {
     use super::*;
     #[test]
-    fn it_adds_two() {
-        let result = add_two(2, 4);
-        assert_eq!(result, 6);
+    fn it_adds_three() {
+        assert_ne!(6, add_three(3));
     }
 }
+
 // #[cfg(test)]
 // mod tests {
 //     use super::*;
