@@ -22,7 +22,7 @@
 //     }
 // }
 pub fn add_three(a: i32) -> i32 {
-    a + 5
+    a + 3
 }
 #[cfg(test)]
 mod tests {
