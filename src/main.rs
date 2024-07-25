@@ -103,167 +103,181 @@
 // }
 
 // vectors
-fn main() {
-    let string1 = String::from("long string is long");
+// fn main() {
+//     let string1 = String::from("long string is long");
 
-    {
-        let string2 = String::from("xyz");
-        let result = longest(string1.as_str(), string2.as_str());
-        println!("The longest string is {result}");
-    }
+//     {
+//         let string2 = String::from("xyz");
+//         let result = longest(string1.as_str(), string2.as_str());
+//         println!("The longest string is {result}");
+//     }
 
-    // let mut v: Vec<i32> = Vec::new();
-    // // updating a vector
-    // v.push(5);
-    // v.push(6);
-    // v.push(12);
-    // println!("This is v:, {}", v);
-    // let v = vec![1, 2, 3, 4, 5];
-    // //refrence the third value via indexing
-    // let third: &i32 = &v[2];
-    // println!("the third value: {third}");
+// let mut v: Vec<i32> = Vec::new();
+// // updating a vector
+// v.push(5);
+// v.push(6);
+// v.push(12);
+// println!("This is v:, {}", v);
+// let v = vec![1, 2, 3, 4, 5];
+// //refrence the third value via indexing
+// let third: &i32 = &v[2];
+// println!("the third value: {third}");
 
-    // //refernce the third value via get
-    // let third: Option<&i32> = v.get(2);
-    // match third {
-    //     Some(third) => println!("the third value via the get method is {third}"),
-    //     None => println!("no third element"),
-    // }
+// //refernce the third value via get
+// let third: Option<&i32> = v.get(2);
+// match third {
+//     Some(third) => println!("the third value via the get method is {third}"),
+//     None => println!("no third element"),
+// }
 
-    //iterating over the values in a vector
-    // let mut v = vec![1, 2, 3, 4, 5];
-    // for i in &mut v {
-    //     *i += 10;
-    //     println!("{i}")
-    // }
+//iterating over the values in a vector
+// let mut v = vec![1, 2, 3, 4, 5];
+// for i in &mut v {
+//     *i += 10;
+//     println!("{i}")
+// }
 
-    //strings
-    // let hello = String::from("123");
-    // println!("{hello}");
-    // //updating a string
+//strings
+// let hello = String::from("123");
+// println!("{hello}");
+// //updating a string
 
-    // hash map
-    // use std::collections::HashMap;
+// hash map
+// use std::collections::HashMap;
 
-    // let mut scores = HashMap::new();
+// let mut scores = HashMap::new();
 
-    // scores.insert(String::from("Blue"), 0);
-    // scores.insert(String::from("Yellow"), 50);
+// scores.insert(String::from("Blue"), 0);
+// scores.insert(String::from("Yellow"), 50);
 
-    // // let team_name = String::from("Blue");
-    // // let score = scores.get(&team_name).copied().unwrap_or(0);
-    // // println!("{score}");
-    // for (key, value) in &scores {
-    //     println!("{key}: {value}")
-    // }
-    // use std::collections::HashMap;
+// // let team_name = String::from("Blue");
+// // let score = scores.get(&team_name).copied().unwrap_or(0);
+// // println!("{score}");
+// for (key, value) in &scores {
+//     println!("{key}: {value}")
+// }
+// use std::collections::HashMap;
 
-    // let field_name = String::from("Favorite color");
-    // let field_value = String::from("Blue");
+// let field_name = String::from("Favorite color");
+// let field_value = String::from("Blue");
 
-    // let mut map = HashMap::new();
-    // map.insert(field_name, field_value);
-    // // field_name and field_value are invalid at this point, try using them and
-    // // see what compiler error you get!
-    // println!("{map:?}")
+// let mut map = HashMap::new();
+// map.insert(field_name, field_value);
+// // field_name and field_value are invalid at this point, try using them and
+// // see what compiler error you get!
+// println!("{map:?}")
 
-    //panic
-    // panic!("crash and burn");
-    // let v = vec![1, 2, 3];
+//panic
+// panic!("crash and burn");
+// let v = vec![1, 2, 3];
 
-    // v[99];
-    // use std::fs::File;
-    // use std::io::ErrorKind;
+// v[99];
+// use std::fs::File;
+// use std::io::ErrorKind;
 
-    // let greeting_file_result = File::open("hello.txt");
+// let greeting_file_result = File::open("hello.txt");
 
-    // let greeting_file = match greeting_file_result {
-    //     Ok(file) => file,
-    //     Err(error) => match error.kind() {
-    //         ErrorKind::NotFound => match File::create("hello.txt") {
-    //             Ok(fc) => fc,
-    //             Err(e) => panic!("Problem creating the file: {e:?}"),
-    //         },
-    //         other_error => {
-    //             panic!("Problem opening the file: {other_error:?}");
-    //         }
-    //     },
-    // };
-    //create a vec that prints out the lagest number
+// let greeting_file = match greeting_file_result {
+//     Ok(file) => file,
+//     Err(error) => match error.kind() {
+//         ErrorKind::NotFound => match File::create("hello.txt") {
+//             Ok(fc) => fc,
+//             Err(e) => panic!("Problem creating the file: {e:?}"),
+//         },
+//         other_error => {
+//             panic!("Problem opening the file: {other_error:?}");
+//         }
+//     },
+// };
+//create a vec that prints out the lagest number
 
-    // let v = vec![2, 3, 4, 6, 7];
-    // let mut largest = &v[0];
-    // for i in &v {
-    //     if i > largest {
-    //         largest = i
-    //     }
-    // }
-    // println! { "the largest number in v is {largest}"
-    // struct Point<X1, Y1> {
-    //     x: X1,
-    //     y: Y1,
-    // }
+// let v = vec![2, 3, 4, 6, 7];
+// let mut largest = &v[0];
+// for i in &v {
+//     if i > largest {
+//         largest = i
+//     }
+// }
+// println! { "the largest number in v is {largest}"
+// struct Point<X1, Y1> {
+//     x: X1,
+//     y: Y1,
+// }
 
-    // impl<X1, Y1> Point<X1, Y1> {
-    //     fn mixup<X2, Y2>(self, other: Point<X2, Y2>) -> Point<X1, Y2> {
-    //         Point {
-    //             x: self.x,
-    //             y: other.y,
-    //         }
-    //     }
-    // }
+// impl<X1, Y1> Point<X1, Y1> {
+//     fn mixup<X2, Y2>(self, other: Point<X2, Y2>) -> Point<X1, Y2> {
+//         Point {
+//             x: self.x,
+//             y: other.y,
+//         }
+//     }
+// }
 
-    // let p1 = Point { x: 5, y: 10.4 };
-    // let p2 = Point { x: "Hello", y: 'c' };
+// let p1 = Point { x: 5, y: 10.4 };
+// let p2 = Point { x: "Hello", y: 'c' };
 
-    // let p3 = p1.mixup(p2);
+// let p3 = p1.mixup(p2);
 
-    // println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
+// println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
 
-    // // }
-    //     let number_list = vec![2, 3, 4, 5, 6, 7];
-    //     let result = largest(&number_list);
-    //     println!("the largest number is {result}");
-    // }
-    // fn largest<T>(lists: &[T]) -> &T {
-    //     let mut largest = &lists[0];
-    //     for i in lists {
-    //         if i > largest {
-    //             largest = i;
-    //         }
-    //     }
-    //     largest
-    // println!("the largest number is {largest}");
-    //generis in struct
-    //     let interger = Name { x: 5, y: 7 };
-    //     let char = Name {x: 'x', y: 'y'};
+// // }
+//     let number_list = vec![2, 3, 4, 5, 6, 7];
+//     let result = largest(&number_list);
+//     println!("the largest number is {result}");
+// }
+// fn largest<T>(lists: &[T]) -> &T {
+//     let mut largest = &lists[0];
+//     for i in lists {
+//         if i > largest {
+//             largest = i;
+//         }
+//     }
+//     largest
+// println!("the largest number is {largest}");
+//generis in struct
+//     let interger = Name { x: 5, y: 7 };
+//     let char = Name {x: 'x', y: 'y'};
 
-    //     let word = Name {x: 5, y:7.8}//wont work
+//     let word = Name {x: 5, y:7.8}//wont work
 
-    //     struct Nameee<T, U>{
-    //         x:T,
-    //         y:U
-    //     }
+//     struct Nameee<T, U>{
+//         x:T,
+//         y:U
+//     }
 
-    // }
-    // struct Name<T> {
-    //     x: T,
-    //     y: T,
-    //monomorphization
-    //     #[Derive(Debug)]
-    //     let interger = Option::Some(5);
-    //     let float = Option::Some(5.6);
-    //     println!("{interger},{float}")
-    // }
-    // enum Option<T> {
-    //     Some(T),
-    //     None,
-    // }
+// }
+// struct Name<T> {
+//     x: T,
+//     y: T,
+//monomorphization
+//     #[Derive(Debug)]
+//     let interger = Option::Some(5);
+//     let float = Option::Some(5.6);
+//     println!("{interger},{float}")
+// }
+// enum Option<T> {
+//     Some(T),
+//     None,
+// }
+// }
+// fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+//     if x.len() > y.len() {
+//         x
+//     } else {
+//         y
+//     }
+// }
+struct Config<'a> {
+    data: &'a str,
 }
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() {
-        x
-    } else {
-        y
-    }
+
+fn process_config<'a>(config: &'a Config) -> &'a str {
+    config.data
+}
+
+fn main() {
+    let data = String::from("important data");
+    let config = Config { data: &data };
+    let processed = process_config(&config);
+    println!("Processed: {}", processed);
 }
